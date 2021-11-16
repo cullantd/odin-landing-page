@@ -1,3 +1,5 @@
+/* Colors and font styles */
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -41,4 +43,99 @@ a, .hero-secondary {
     font-weight: light;
     font-style: italic;
     color: #1F2937;
+}
+
+.subtext {
+    color: lightslategray;
+}
+
+/* padding */
+
+.header, .content, .quote, .cta, .footer {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+/* */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.window {
+    border-radius: 25px;
+    border: 2px solid #3882F6;
+    width: 100px;
+    height: 100px;
+}
+
+.subtext {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+img {
+    width: 700px;
+    height: 300px;
+    padding: 50px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta {
+    display: flex;
+}
+
+.footer {
+    text-align: center;
+    display: flex;
+
 }
