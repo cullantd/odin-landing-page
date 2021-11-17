@@ -95,6 +95,7 @@ button, .cta {
 body {
     display: flex;
     flex-direction: column;
+    margin: 0px;
 }
 
 .header {
@@ -232,7 +233,10 @@ h3 {
 }
 
 .cta-p {
-    margin: 0px;
+    margin-top: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
 }
 
 .footer {
