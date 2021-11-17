@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+
 /* Colors and font styles */
 
 * {
@@ -14,17 +16,31 @@ h1 {
     color: #F9FAF8;
 }
 
-a, .hero-secondary {
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+    margin: 0px;
+}
+
+a, .hero-secondary, .cta, .footer {
     font-size: 18px;
     color: #E5E7EB;
 }
 
 .logo {
-    font-size: 24px;
-    color: #F9FAF8;
+    font-family: Besley, serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: white;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 
-.sign-up, .cta {
+button, .cta {
     background-color: #3882F6;
 }
 
@@ -32,6 +48,7 @@ a, .hero-secondary {
     font-size: 36px;
     font-weight: extra-bold;
     color: #1F2937;
+    text-align: center;
 }
 
 .quote {
@@ -47,13 +64,30 @@ a, .hero-secondary {
 
 .subtext {
     color: lightslategray;
+    font-size: 14px;
 }
 
 /* padding */
 
-.header, .content, .quote, .cta, .footer {
+.hero, .cta, .footer {
     padding-left: 150px;
     padding-right: 150px;
+}
+
+.header-top, .content {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.quote {
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.cta {
+    padding: 25px
 }
 
 /* */
@@ -80,15 +114,41 @@ body {
     gap: 32px;
 }
 
+.hero-secondary {
+    line-height: 48px;
+    padding-right: 50px;
+}
+
 .hero {
     display: flex;
     flex-direction: row;
     margin-bottom: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .content {
     display: flex;
     flex-direction: column;
+}
+
+.icon-list {
+    justify-content: space-between;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
+    color: white;
+    border-radius: 12px;
+    border: none;
 }
 
 ul {
@@ -104,6 +164,8 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 175px;
+    width: 175px;
 }
 
 .window {
@@ -119,10 +181,21 @@ ul {
     text-align: center;
 }
 
+.sign-up {
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
+    color: white;
+    border-radius: 12px;
+    border: 2px solid white;
+}
+
 img {
-    width: 700px;
-    height: 300px;
-    padding: 50px;
+    display: flex;
+    width: 500px;
+    height: 500px;
+    border-radius: 25px;
+    border: 2px solid #3882F6;
 }
 
 .quote {
@@ -130,12 +203,36 @@ img {
     flex-direction: column;
 }
 
+h3 {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .cta {
     display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 12px;
+    justify-content: space-evenly;
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.cta-p {
+    margin: 0px;
 }
 
 .footer {
-    text-align: center;
     display: flex;
+    color: white;
+    justify-content: center;
 
 }
